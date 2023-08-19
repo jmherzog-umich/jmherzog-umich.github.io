@@ -1,0 +1,64 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+$background-color: #fdfdfd;
+$tertiary-color:   #ffffff;
+$secondary-color:  #ffcb05;
+$brand-color:      #00274c;
+$content-width:    800px;
+
+@import "minima";
+
+.site-header {
+    background-color: $brand-color;
+    color:  $secondary-color;
+    border-bottom: 6px solid $secondary-color;
+}
+
+.site-title {
+    color: $secondary-color;
+}
+
+.site-nav {
+    color: $secondary-color;
+    .page-link {
+        color: $secondary-color;
+    }
+}
+
+.site-footer {
+  background-color:  $brand-color;
+  border-top: 6px solid $secondary-color;
+  a {
+    color: $secondary-color;
+  }
+}
+
+.footer-heading {
+  color: $tertiary-color;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+  width:         calc(25% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+  width:         calc(40% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.contact-list,
+.social-media-list,
+.link-list {
+  padding-top: 5px;
+  color: $tertiary-color;
+}
+
+

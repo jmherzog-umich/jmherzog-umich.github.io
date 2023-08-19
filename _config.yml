@@ -20,23 +20,45 @@
 
 title: Joshua M. Herzog
 email: jmherzog@umich.edu
+position: Research Fellow
+department: Mechanical Engineering
+institution: University of Michigan
 description: >- # this means to ignore newlines until "baseurl:"
   Research Fellow - University of Michigan, Department of Mechanical Engineering
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: joshua-herzog-01841374
 github_username:  jmherzog-umich
+scholar_userid: frqdXXYAAAAJ
+orcid_id:   0000-0001-9089-819X
+#icon: assets/logos/UM-Main.svg
+
+links:
+  - url: www.umich.edu
+    name: University of Michigan
+    icon: assets/logos/UM.svg
+  - url: www.engin.umich.edu
+    name: Michigan Engineering
+    icon: assets/logos/UM-COE.svg
+  - url: me.engin.umich.edu
+    name: Mechanical Engineering
+    icon: assets/logos/UM-ME.svg
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
-minima:
-  social_links:
-    - platform: ORCIDiD
-      user_url: "https://orcid.org/0000-0001-9089-819X"
-      title: "ORCIDiD: 0000-0001-9089-819X"
+liquid:
+  error_mode: strict
+  
+header_pages:
+  - research.markdown
+  - publications.markdown
+  - presentations.markdown
+  - software.markdown
+  - datasets.markdown
+  - gallery.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
