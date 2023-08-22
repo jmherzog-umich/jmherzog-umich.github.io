@@ -3,17 +3,14 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
+        <h2 class="footer-heading">{{ site.title | escape }}</h2>
         <ul class="contact-list">
-          <li class="p-name">{{ site.position | escape }}</li>
-          <li class="p-name">{{ site.department | escape }}</li>
-          <li class="p-name">{{ site.institution | escape }}</li>
-          {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}" title="Email me">Email me</a></li>
-          {%- endif -%}
+          {%- if site.position -%}<li class="p-name">{{ site.position | escape }}</li> {%- endif -%}
+          {%- if site.department -%}<li class="p-name">{{ site.department | escape }}</li> {%- endif -%}
+          {%- if site.institution -%}<li class="p-name">{{ site.institution | escape }}</li> {%- endif -%}
+          {%- if site.email -%}<li class="p-name">{{ site.email | replace: "@", " _at_ " | escape}}</li> {%- endif -%}
         </ul>
       </div>
 

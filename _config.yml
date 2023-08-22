@@ -53,12 +53,15 @@ liquid:
   error_mode: strict
   
 header_pages:
-  - research.markdown
-  - publications.markdown
-  - presentations.markdown
-  - software.markdown
-  - datasets.markdown
-  - gallery.markdown
+  - main: pages/research.markdown
+  - main: pages/publications.markdown
+  - main: pages/presentations.markdown
+  - main: pages/software.markdown
+    sub:
+      - pages/software/mcg.markdown
+      - pages/software/raytracer.markdown
+  - main: pages/datasets.markdown
+  - main: pages/gallery.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.

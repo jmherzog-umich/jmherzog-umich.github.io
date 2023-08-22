@@ -1,8 +1,7 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign page_paths = site.header_pages -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
       {%- if site.icon -%}
         <img height=36px src={{ site.icon | relative_url }}></img>
@@ -22,10 +21,22 @@
         </label>
 
         <div class="trigger">
-          {%- for path in page_paths -%}
+          {%- for directory in page_paths -%}
+            {%- assign path = directory.main -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- if directory.sub -%}
+              <div class="dropdown">
+                <button class="dropbtn"><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></button>
+                <div class="dropdown-content">
+                {%- for sp in directory.sub -%}
+                  <a href="#">{{ sp }}</a>
+                {%- endfor -%}
+                </div>
+              </div>
+            {%- else -%}
+              {%- if my_page.title -%}
+                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              {%- endif -%}
             {%- endif -%}
           {%- endfor -%}
         </div>

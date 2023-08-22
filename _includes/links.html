@@ -3,7 +3,7 @@
     {%- if lnk.url and lnk.name and lnk.icon -%}
         <li>
             <a href="https://{{ lnk.url| cgi_escape | escape}}">
-                <img height=36px src="{{ lnk.icon | relative_url }}"></img>
+                <img src="{{ lnk.icon | relative_url }}"></img>
             </a>
         </li>
     {%- endif -%}
