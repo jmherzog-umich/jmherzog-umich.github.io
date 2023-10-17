@@ -60,14 +60,14 @@ header_pages:
   - main: pages/research.markdown
   - main: pages/publications.markdown
   - main: pages/presentations.markdown
-  - main: pages/students.markdown
+#  - main: pages/students.markdown
   - main: pages/software.markdown
     sub:
       - pages/software/mcrad.markdown
       - pages/software/librad.markdown
       - pages/software/raytracer.markdown
-  - main: pages/datasets.markdown
-  - main: pages/gallery.markdown
+#  - main: pages/datasets.markdown
+#  - main: pages/gallery.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
