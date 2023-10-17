@@ -2,42 +2,89 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+$text-color:        #023047;
+$background-color:  #fefefe;
+$head-color:        #eeeeee;
+$foot-color:        #dddddd;
+$bold-color:        #004499;
+
+$graytext-color:    #5F9EA0;
+$brand-color:       #008B8B;
+$accent-color:      #2F4F4F;
+$highlight-color:   #AADDDD;
+
+$content-width:     1000px;
+$on-palm:           800px;
+$on-laptop:         1000px;
+$base-font-family: ui-serif;
+
 @import "minima";
 
-$background-color: #fdfdfd;
-$tertiary-color:   #ffffff;
-$secondary-color:  #ffcb05;
-$brand-color:      #00274c;
-$content-width:    800px;
-$gray-blue:        #8888AA;
+a {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+}
+
+.introtext {
+    font-size: 20px;
+}
+.footnote {
+    font-size: 14px;
+    color: $graytext-color;
+    padding: 0;
+}
+
+.vsep {
+  height: 6px;
+  margin: 0;
+  margin-top: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0;
+  border-bottom: solid 2px;
+  border-color: $brand-color;
+}
+
+.vspace {
+  height: 6px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding: 0;
+}
 
 .site-header {
-    background-color: $brand-color;
-    color:  $secondary-color;
-    border-bottom: 6px solid $secondary-color;
+    background-color: $head-color;
+    color:  $brand-color;
+    border-bottom: 2px solid $brand-color;
 }
 
 .site-title {
-    color: $secondary-color;
+    color: $brand-color;
+    font-weight: 600;
 }
 
 .site-nav {
-    color: $secondary-color;
+    color: $brand-color;
     .page-link {
-        color: $secondary-color;
+        color: $brand-color;
     }
 }
 
 .site-footer {
-  background-color:  $brand-color;
-  border-top: 6px solid $secondary-color;
+  background-color:  $foot-color;
+  border-top: 2px solid $brand-color;
   a {
-    color: $secondary-color;
+    color: $brand-color;
   }
 }
 
 .footer-heading {
-  color: $tertiary-color;
+  color: $accent-color;
+  font-weight: 600;
 }
 
 .footer-col-1 {
@@ -55,11 +102,15 @@ $gray-blue:        #8888AA;
   width:         calc(35% - (#{$spacing-unit} / 2));
 }
 
-.contact-list,
+.contact-list {
+  padding-top: 5px;
+  color: $accent-color;
+}
+
 .social-media-list,
 .link-list {
   padding-top: 5px;
-  color: $tertiary-color;
+  color: $brand-color;
 }
 
 .links-list {
@@ -67,28 +118,39 @@ $gray-blue:        #8888AA;
   list-style-type: none;
 }
 
-.inlinefig {
+.multicolumn {
+  display: flex;
   padding:  2px;
+  border: solid 1px;
   border-style: none; 
   text-align: left;
 }
 
-details {
-  blockquote {
-    color: $gray-blue;
-    font-size: 14px;
-  }
-  color: $brand-color;
+.multicolumn:after {
+  display: block; 
+  content: "";
+  clear: both;
+  text-align: center;
 }
 
- /* Dropdown Button */
-.dropbtn {
-  background-color: $brand-color;
-  color: $secondary-color;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+.column {
+  flex: 0 1 auto;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
+  vertical-align: middle;
+  min-width: 200px;
+}
+
+details {
+  blockquote {
+    color: $graytext-color;
+    font-size: 14px;
+  }
+  color: $accent-color;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -101,25 +163,75 @@ details {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: $background-color;
+  list-style-type: none;
+  margin: 2px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-size: 14px;
+  min-width: 350px;
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+  color: $brand-color;
+  padding: 2px;
   text-decoration: none;
   display: block;
+  text-align: start;
+  margin: 6px;
+}
+
+.dropdown-link {
+  position: relative;
+  border-bottom: 1px solid gray;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: $highlight-color;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;} 
+.dropdown:hover .dropbtn {background-color: $highlight-color;} 
+
+ul.education {
+  list-style-image: url('/assets/education.svg');
+  padding: 5px;
+}
+
+ul.education > li {
+  padding: 5px;
+}
+
+ul.interests {
+  padding: 5px;
+}
+
+figure {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.footnotes {
+  padding: 1em 0 0 0;
+  border-top-style: double;
+  border-width: 1px;
+  border-color: $graytext-color;
+  max-width: 500px;
+}
+
+.footnotes > ol {
+  padding: 0 0 0 0;
+  font-size: 12px;
+  margin: 0 0 0 2em;
+}
+
+strong {
+  color: $bold-color;
+}
+

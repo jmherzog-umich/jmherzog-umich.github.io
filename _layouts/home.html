@@ -2,18 +2,51 @@
 layout: default
 ---
 
+{% assign contentArray = page.content | markdownify | split: site.excerpt_separator %}
+
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {%- if page.image -%}
-    <table class="inlinefig"><tr><td class="inlinefig"><img src={{ page.image}}></td><td class="inlinefig">{{ page.description }}</td></tr></table>
-  {%- endif -%}
+  <div class="multicolumn">
+    <div class="column">
+      {%- if page.image -%}<img src={{ page.image }}>{%- endif -%}
+    </div>
+    <div class="column">
+      <div class="introtext">{{ contentArray.first }}</div>
+    </div>
+  </div>
 
-  {{ content }}
+  <div class="multicolumn">
+    {%- if page.interests -%}
+    <div class="column">
+      <b>Interests</b>
+      <ul class="interests">
+        {%- for int in page.interests -%}
+          <li>{{ int }}</li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    {%- endif -%}
+    {%- if page.education -%}
+    <div class="column">
+      <b>Background</b>
+      <ul class="education">
+      {%- for edu in page.education -%}
+        <li><div>{{ edu.degree }}</div><div class="footnote">{{ edu.institution }}</div></li>
+      {%- endfor -%}
+      </ul>
+    </div>
+    {%- endif -%}
+  </div>
+
+  <div>
+    {{ contentArray.last }}
+  </div>
 
   {%- if site.posts.size > 0 -%}
+    <div class="vsep"></div><div class="vspace"></div>
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}

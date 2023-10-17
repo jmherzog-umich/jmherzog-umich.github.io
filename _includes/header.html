@@ -26,12 +26,13 @@
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if directory.sub -%}
               <div class="dropdown">
-                <button class="dropbtn"><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></button>
-                <div class="dropdown-content">
+                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}&#9660;</a>
+                <ul class="dropdown-content">
                 {%- for sp in directory.sub -%}
-                  <a href="#">{{ sp }}</a>
+                  {%- assign my_subpage = site.pages | where: "path", sp | first -%}
+                  <li class="dropdown-link"><a href="{{ my_subpage.url }}">{{ my_subpage.title }}</a></li>
                 {%- endfor -%}
-                </div>
+                </ul>
               </div>
             {%- else -%}
               {%- if my_page.title -%}
