@@ -1,0 +1,33 @@
+﻿\begin{tikzpicture}[scale=0.2]
+	%Draw table
+	\fill[green!30!red!50!black] (-76,-41) rectangle (76,41);
+	\fill[green!30!black] (-72,-37) rectangle (72,37);
+	\fill[green!50!black] (-70,-35) rectangle (70, 35);
+	\fill[black] (-71,-36) circle (3);
+	\fill[black] (71,-36) circle (3);
+	\fill[black] (-71,36) circle (3);
+	\fill[black] (71,36) circle (3);
+	\fill[black] (0,-36) circle (3);
+	\fill[black] (0,36) circle (3);
+	
+	%Draw object balls
+	\fill[yellow] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=1,black, fill=white] {1};
+	\fill[blue!50!black] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=1,black, fill=white] {2};
+	\fill[red] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=1,black, fill=white] {3};
+	\fill[magenta!50!black] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=1,black, fill=white] {4};
+	\fill[orange] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=1,black, fill=white] {5};
+	\fill[green!70!black] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=1,black, fill=white] {6};
+	\fill[red!50!black] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=1,black, fill=white] {7};
+	\fill[black] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=1,black, fill=white] {8};
+	\fill[yellow] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=1,black, fill=white] {9};
+	\fill[blue!50!black] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=0,black, fill=white] {10};
+	\fill[red] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=0,black, fill=white] {11};
+	\fill[magenta!50!black] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=0,black, fill=white] {12};
+	\fill[orange] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=0,black, fill=white] {13};
+	\fill[green!70!black] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=0,black, fill=white] {14};
+	\fill[red!50!black] ({60*rand}, {30*rand}) circle (2)  node[circle, inner sep=0,black, fill=white] {15};
+
+	%cue ball
+	\fill[white!90!black] (-60,10) circle(2.5);
+
+\end{tikzpicture}

@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% assign contentArray = page.content | markdownify | split: site.excerpt_separator %}
+
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  {%- if page.intro and page.image -%}
+  <div class="multicolumn">
+    <div class="column">
+      <img src={{ page.image }}>
+    </div>
+    <div class="column">
+      <p class="introtext">
+        {{ page.intro }}
+      </p>
+    </div>
+  {%- else if page.intro -%}
+    <div class="introtext">
+      {{ page.intro }}
+    </div>
+  {%- else if page.image -%}
+    <div>
+      <img src={{ page.image }}>
+    </div>
+  {%- endif -%}
+  
+  <div class="post-content">
+    {%- for c in contentArray limit:1 -%}
+      <div class="introtext">{{ c }}</div>
+    {%- endfor -%}
+  
+    {%- if contentArray.size > 1 -%}
+      <div class="vsep"></div><div class="vspace"></div>
+    {%- endif -%}
+  
+    {%- for c in contentArray offset:1 -%}
+      <div class="post-subcontent">
+        {{ c }}
+      </div>
+    {%- endfor -%}
+  </div>
+
+</article>
