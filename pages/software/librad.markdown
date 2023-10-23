@@ -15,11 +15,12 @@ C++ standard library. The code is available on my Github account
 <!--more-->
 
 **librad** implements several components including:
-- a variety of numeric integration/Gaussian quadrature routines
+- a variety of numeric integration/quadrature routines
   1.  Tanh-Sinh (or double-exponential) quadrature
   2.  Gaussian-Legendre quadrature using an asymptotic expansion [^2] [^3]
-  3.  Several other related methods
-- iterative solutions to $$H$$, $$X$$, and $$Y$$ using Tanh-Sinh quadrature
+  3.  A variety of related single- and double-exponential methods
+- Several explicit Runge-Kutta ODE solvers
+- iterative solutions to $$H$$, $$X$$, and $$Y$$
 - approximate analytic solutions to $$H$$ [^4]
 - reflectance, transmittance, and absorbance calculations for a planar layer
 
