@@ -26,10 +26,10 @@ education:
     logo: /assets/logos/UM.svg
 ---
 
-I am a postdoctoral research fellow that **develops** imaging tools for biomedical applications, with a large focus on diagnosing eye diseases. I also **collaborate** with other research groups to develop optical and imaging tools to investigate complicated physical processes in energy science applications. My **approach** is to combine experiments and computational methods to better understand how images are formed, and I use that understanding to make **quantitative** measurements. 
+I am a postdoctoral research fellow that **develops** imaging tools for biomedical applications, with a large focus on diagnosing eye diseases. I also **collaborate** with other research groups to develop optical and imaging tools to investigate complicated physical processes in energy science applications. My **approach** is to combine experiments and computational methods to better understand how images are formed, and I use that understanding to make **quantitative** measurements.
 
 <!--more-->
 
-My current [project](/research) focuses on developing a too to diagnose *microbial keratitis*, a severe and potentially blinding eye infection, using ultraviolet LEDs and cameras. I **mentor** several undergraduate [students](/students) from different backgrounds on different aspects of the project. Through my research I also develop and maintain several open-source optics and imaging-related [software](/code/) programs. 
+My current [project](/research) focuses on developing a tool to diagnose *microbial keratitis*, a severe and potentially blinding eye infection, using ultraviolet LEDs and cameras. I **mentor** several undergraduate students from different backgrounds on different aspects of the project. Through my research I also develop and maintain several open-source optics and imaging-related [software](/code/) programs.
 
 I earned my Ph.D. at the [University of Wisconsin-Madison](https://www.wisc.edu) where I developed laser and imaging techniques to study [combustion in diesel engines](https://erc.wisc.edu/) and [inertial confinement fusion](http://silver.neep.wisc.edu/~shock/). Since then, I have worked as a post-doctoral research fellow with [Prof. Volker Sick](https://volker-sick.engin.umich.edu/home). I additionally collaborate with [Prof. Solomon Adera's research group](https://adera.engin.umich.edu/) to use laser and optical methods to study energy transport processes.
