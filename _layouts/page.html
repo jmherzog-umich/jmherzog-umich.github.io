@@ -35,11 +35,8 @@ layout: default
       <div class="introtext">{{ c }}</div>
     {%- endfor -%}
   
-    {%- if contentArray.size > 1 -%}
-      <div class="vsep"></div><div class="vspace"></div>
-    {%- endif -%}
-  
     {%- for c in contentArray offset:1 -%}
+      <div class="vsep"></div><div class="vspace"></div>
       <div class="post-subcontent">
         {{ c }}
       </div>
