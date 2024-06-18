@@ -6,10 +6,10 @@ layout: home
 image: /assets/headshot.jpg
 list_title: 
 interests:
-  - Optical spectroscopy and imaging
-  - Optical properties of matter
-  - Quantitative biomedical imaging
-  - Computational chemistry
+  - Optical spectroscopy and imaging 
+  - Optical properties of biomolecules and condensed matter
+  - Quantitative imaging of biological processes and diseases
+  - *Ab initio* computational chemistry methods
   - Frugal science
 education:
   - degree: PhD (Nuclear Engineering), 2020
