@@ -66,7 +66,7 @@ header_pages:
       - pages/software/mcrad.markdown
       - pages/software/librad.markdown
 #      - pages/software/raytracer.markdown
-#  - main: pages/datasets.markdown
+  - main: pages/datasets.markdown
 #  - main: pages/gallery.markdown
 
 # Exclude from processing.
