@@ -60,7 +60,7 @@ header_pages:
   - main: pages/research.markdown
   - main: pages/publications.markdown
   - main: pages/presentations.markdown
-#  - main: pages/students.markdown
+  - main: pages/students.markdown
   - main: pages/software.markdown
     sub:
       - pages/software/mcrad.markdown
