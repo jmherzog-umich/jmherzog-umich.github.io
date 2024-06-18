@@ -26,7 +26,7 @@ education:
     logo: /assets/logos/UM.svg
 ---
 
-I am a postdoctoral research fellow that develops optical and imaging tools for biomedical applications, with a large focus on diagnosing eye diseases. I also collaborate with other research groups to develop optical and imaging tools to investigate complicated physical and chemical processes in engineering applications. My approach is to combine experiments and computational methods to better understand how measurements are made, and I use that understanding to make quantitative measurements.
+I am a postdoctoral research fellow that develops optical and imaging tools for biomedical applications, with a large focus on diagnosing eye diseases. I also collaborate with other research groups to develop optical and imaging tools to investigate complicated physical and chemical processes in engineering applications. My approach is to combine experiments and computational methods to better understand how measurements are made, and I use that understanding to make quantitative tools.
 
 <!--more-->
 
