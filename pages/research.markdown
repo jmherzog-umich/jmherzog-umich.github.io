@@ -18,7 +18,7 @@ reliable measure of disease. These state-of-the-art techniques are also very exp
 are responsible for around 100 million cases of blindness or severely impaired vision worldwide. 
 However, we have no reliable way to observe damage or oxidation of the lens.
 
-I am developing ASUVF imaging as a rapid and low-cost method that can simultaneously detect and quantify corneal aberrations
+I am developing anterior segment ultraviolet fluorescence (ASUVF) imaging as a rapid and low-cost method that can simultaneously detect and quantify corneal aberrations
 and oxidation of the lens. Ongoing work focuses primarily on understanding:
 1. Chemical composition of the aging and oxidized lens
 1. Optical properties and molecular electronic structure of the lens constituents
