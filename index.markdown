@@ -4,13 +4,13 @@
 
 layout: home
 image: /assets/headshot.jpg
-list_title: 
-interests:
-  - Optical spectroscopy and imaging 
-  - Optical properties of biomolecules and condensed matter
-  - Quantitative imaging of biological processes and diseases
-  - *Ab initio* computational chemistry methods
-  - Frugal science
+list_title: Posts
+interests: [
+  "Optical spectroscopy and imaging",
+  "Optical properties of biomolecules and condensed matter",
+  "Quantitative imaging of biological processes and diseases",
+  "Ab initio modeling of biomolecules",
+  "Frugal science"]
 education:
   - degree: PhD (Nuclear Engineering), 2020
     institution: University of Wisconsin-Madison
